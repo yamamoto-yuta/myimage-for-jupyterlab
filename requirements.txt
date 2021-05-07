@@ -5,6 +5,7 @@ jupyterlab
 ## Extensions
 jupyterlab_widgets
 lckr-jupyterlab-variableinspector
+ipywidgets
 
 # Libraries
 ## Utils
