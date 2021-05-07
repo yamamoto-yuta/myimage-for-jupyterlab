@@ -20,7 +20,7 @@ epaniuqs/myimage-for-jupyterlab
 
 `$HOME/`へコピーしたもの：
 - `.bashrc`
-- `requirements.txt`
+- `requirements-base.txt`
 
 ### インストールしたコマンド
 - git
