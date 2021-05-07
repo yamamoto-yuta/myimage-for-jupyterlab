@@ -1,5 +1,10 @@
 # Editor
+## Main
 jupyterlab
+
+## Extensions
+jupyterlab_widgets
+lckr-jupyterlab-variableinspector
 
 # Libraries
 ## Utils
