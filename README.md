@@ -3,10 +3,78 @@
 
 ## 使い方
 
-DockerHubから次のイメージをpullしてくる
+### pullして使う
+
+1. DockerHubから次のイメージをpullしてくる
+
 ```
-epaniuqs/myimage-for-jupyterlab
+$ docker pull epaniuqs/myimage-for-jupyterlab
 ```
+
+2. 次のファイルを引っ張ってくる
+    - `docker-compose.yml`
+    - `.bashrc`（任意）
+    - `.gitignore`（任意）
+
+3. docker-compose.ymlを次のように修正
+
+```yml
+...
+    # For build image
+    # build: .      # コメントアウトする
+    # image: myimage-for-jupyterlab     # コメントアウトする
+
+    # For pull image
+    image: epaniuqs/myimage-for-jupyterlab  # コメント解除する
+...
+```
+
+4. Docker環境を立ち上げる
+```
+$ docker-compose up
+```
+
+### `FROM`で使う
+
+1. Dockerfileに次の内容をコピペ
+```Dockerfile
+# Base image
+FROM epaniuqs/myimage-for-jupyterlab
+
+# Environment
+COPY requirements.txt $HOME/
+
+# Install Python libraries
+RUN pip install --upgrade pip \
+  && pip install -r $HOME/requirements.txt
+
+```
+
+2. requirements.txtを作る
+
+3. 次のファイルを引っ張ってくる
+    - `docker-compose.yml`
+    - `.bashrc`（任意）
+    - `.gitignore`（任意）
+
+4. docker-compose.ymlを次のように修正
+
+```yml
+...
+    # For build image
+    build: .      # コメントアウト解除
+    image: myimage-for-jupyterlab     # コメント解除する（イメージ名は用途に合わせて変更すること）
+
+    # For pull image
+    # image: epaniuqs/myimage-for-jupyterlab  # コメントアウトする
+...
+```
+
+5. buildして環境を立ち上げる
+```
+$ docker-compose up -d --build
+```
+
 
 ## 構成
 
