@@ -2,8 +2,14 @@ version: '3'
 
 services:
   latest:
-    build: .
-    image: myimage-for-jupyterlab
+    
+    # For build image
+    # build: .
+    # image: myimage-for-jupyterlab
+
+    # For pull image
+    image: epaniuqs/myimage-for-jupyterlab
+
     container_name: myimage-for-jupyterlab
     environment:
       TZ: Asia/Tokyo
