@@ -14,4 +14,4 @@ RUN apt-get update && apt-get upgrade -y \
 
 # Install Python libraries
 RUN pip install --upgrade pip \
-  && pip install -r $HOME/requirements.txt
+  && pip install -r $HOME/requirements-base.txt
