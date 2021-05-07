@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  latest:
+    build: .
+    image: myimage-for-jupyterlab
+    container_name: myimage-for-jupyterlab-
+    environment:
+      TZ: Asia/Tokyo
+    ports:
+      - 8888:8888
+    volumes:
+      - ./:/home/
+    tty: true
