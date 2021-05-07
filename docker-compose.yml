@@ -4,7 +4,7 @@ services:
   latest:
     build: .
     image: myimage-for-jupyterlab
-    container_name: myimage-for-jupyterlab-
+    container_name: myimage-for-jupyterlab
     environment:
       TZ: Asia/Tokyo
     ports:
