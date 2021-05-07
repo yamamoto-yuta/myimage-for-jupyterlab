@@ -1,5 +1,5 @@
 # Editor
-jupyterlab==2.3.1
+jupyterlab
 
 # Libraries
 ## Utils
