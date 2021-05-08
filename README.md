@@ -104,3 +104,7 @@ $ docker-compose up -d --build
 - jupyterlab_widgets
 - lckr-jupyterlab-variableinspector
 - ipywidgets
+
+## 更新履歴
+
+v1.0 - 2021/05/09
