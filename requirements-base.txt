@@ -8,9 +8,12 @@ lckr-jupyterlab-variableinspector
 ipywidgets
 
 # Libraries
-## Utils
+
+## Numerical
 numpy
 pandas
+
+## Utility
 tqdm
 
 ## Graph
