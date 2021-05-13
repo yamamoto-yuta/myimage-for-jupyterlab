@@ -13,3 +13,11 @@ numpy
 pandas
 tqdm
 
+## Graph
+matplotlib
+japanize-matplotlib
+seaborn
+
+## Text
+regex
+
