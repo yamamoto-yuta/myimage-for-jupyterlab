@@ -95,16 +95,42 @@ $ docker-compose up -d --build
 - vim
 
 ### インストールしたPythonライブラリ
-- jupyterlab
-- numpy
-- pandas
-- tqdm
 
-### インストールしたJupyter Lab拡張機能
+#### エディタ
+- jupyterlab
+
+#### Jupyter Lab拡張機能
 - jupyterlab_widgets
 - lckr-jupyterlab-variableinspector
 - ipywidgets
 
+### 数値計算
+- numpy
+- pandas
+
+### グラフ
+- matplotlib
+- japanize-matplotlib
+- seaborn
+
+### テキスト
+- regex
+
+### その他ツール
+- tqdm
+
+
+
 ## 更新履歴
 
 v1.0 - 2021/05/09
+- リリース
+
+v1.1 - 2021/05/13
+- 次のライブラリを追加
+    - グラフ系
+        - matplotlib
+        - japanize-matplotlib
+        - seaborn
+    - テキスト系
+        - regex
